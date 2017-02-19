@@ -48,30 +48,27 @@ p{
 	left: 616px;
 }
 
-#displayMsg{
-	position: absolute;
-	width: 300px;
-	height: 50px;
-	padding-left: 240px;
-	padding-top: 72px;
-	color: #5e4c5a;
-	text-align: center;
-
-}
-
 #displayImg{
 	position: absolute;
-	width: 70px;
-	height: 70px;
-	right: 270px;
-	top: 150px;
+	width: 265px;
+	height: 125px;
+	right: -21%;
+	top: -42%;
+	left: 0px;
+	bottom: 0px;
+	margin: auto;
+	color: #5e4c5a;
+	text-align: center;
 }
 
-img#logo{
+#logo{
 	position: absolute;
-	display: block;
-	margin-left: 275px;
-	top: 200px;
+	top: -17%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	
 }
 
 img#help{
@@ -80,14 +77,20 @@ img#help{
 	top: 5px;
 }
 
-.active{
-	-webkit-filter: drop-shadow(2px 2px 0 white)
-		drop-shadow(-2px 2px 0 white)
-		drop-shadow(2px -2px 0 white)
-      		drop-shadow(-2px -2px 0 white); 
+@keyframes highlight {
+	to{
+		-webkit-filter: drop-shadow(3px 3px 0 white)
+		drop-shadow(-3px 3px 0 white)
+		drop-shadow(3px -3px 0 white)
+      		drop-shadow(-3px -3px 0 white); 
 
-	filter: drop-shadow(2px 2px 0 white) 
-		drop-shadow(-2px 2px 0 white)
-		drop-shadow(2px -2px 0 white)
-       		drop-shadow(-2px -2px 0 white);
+	filter: drop-shadow(3px 3px 0 white) 
+		drop-shadow(-3px 3px 0 white)
+		drop-shadow(3px -3px 0 white)
+       		drop-shadow(-3px -3px 0 white); 
+	}
+}
+
+.active{
+	animation: highlight 2s ease-in-out infinite alternate;
 }
