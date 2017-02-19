@@ -1,0 +1,93 @@
+body{
+	background-color: #e7f3cd;
+}
+.wrap{
+	width: 800px;
+	height: 600px;
+	background-image: url("images/window-fog.jpg");
+	margin: auto;
+}
+
+input{
+	background-color: #efe6e9;
+	border: 2px solid #50434c;
+    border-radius: 4px;
+    color: #5e4c5a;
+
+}
+
+
+.forms {
+	width: 200px;
+	margin-left: 150px;
+	padding-top: 100px;
+}
+
+p{
+	text-align: center;
+}
+
+.plants{
+	padding: 65px 1px 0px;
+
+}
+
+.images{
+	margin-left: 110px; 
+}
+
+#hanging{
+	position: relative;
+	bottom: 444px;
+	left: 80px
+}
+
+#ivy{
+	position: relative;
+	bottom: 262px;
+	left: 616px;
+}
+
+#displayMsg{
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	padding-left: 240px;
+	padding-top: 72px;
+	color: #5e4c5a;
+	text-align: center;
+
+}
+
+#displayImg{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	right: 270px;
+	top: 150px;
+}
+
+img#logo{
+	position: absolute;
+	display: block;
+	margin-left: 275px;
+	top: 200px;
+}
+
+img#help{
+	position: absolute;
+	left: 75%;
+	top: 5px;
+}
+
+.active{
+	-webkit-filter: drop-shadow(2px 2px 0 white)
+		drop-shadow(-2px 2px 0 white)
+		drop-shadow(2px -2px 0 white)
+      		drop-shadow(-2px -2px 0 white); 
+
+	filter: drop-shadow(2px 2px 0 white) 
+		drop-shadow(-2px 2px 0 white)
+		drop-shadow(2px -2px 0 white)
+       		drop-shadow(-2px -2px 0 white);
+}

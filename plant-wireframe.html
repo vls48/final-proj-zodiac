@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<title>What Pixel Plant Are You?</title>
+
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+	<link rel="stylesheet" href="master.css">
+
+</head>
+
+<body>
+	
+	<div class="wrap">
+
+		<img src="images/help.png" alt="help" id="help">
+		<div id="displayImg">
+			
+		</div>
+		
+		<form onsubmit="return calcPlant();">
+			<div class="forms"><p> 
+				<input id="uname" name="uname" type="text" placeholder="Name" required>
+			</p>
+
+			<p>
+				<input id="bday" name="bday" type="date" required>
+			</p>
+			<p>
+				<input type="submit">
+			</p>
+			</div>
+		</form>
+		
+		<img src="images/logo-new.png" alt="logo" id="logo">
+		
+		
+
+		<div id="displayMsg">
+			
+		</div>		
+
+		<div class="images">
+			<img src="images/plants/tulip.png" alt="tulip" class="plants">
+			<img src="images/plants/bonsai.png" alt="bonsai tree" class="plants">
+			<img src="images/plants/daisy.png" alt="daisy" class="plants">
+			<img src="images/plants/aloe.png" alt="aloe" class="plants">
+			<img src="images/plants/carnation.png" alt="carnation" class="plants">
+			<img src="images/plants/cactus.png" alt="cactus" class="plants">
+			<img src="images/plants/daffodil.png" alt="daffodil" class="plants">
+			<img src="images/plants/venusflytrap.png" alt="venus fly trap" class="plants">
+			<img src="images/plants/bleedingheart.png" alt="bleeding hearts" class="plants">
+			<img src="images/plants/sunflower.png" alt="sunflower" class="plants">	
+		</div>
+
+			<img src="images/plants/hangingplant.png" alt="hanging plant" class="plants" id="hanging">
+			
+			<img src="images/plants/ivy.png" alt="ivy" class="plants" id="ivy">	
+
+	</div>
+
+<script src="whatplantjava.js"></script>
+</body>
+
+</html>
