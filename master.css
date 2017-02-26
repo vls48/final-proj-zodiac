@@ -1,5 +1,9 @@
+* {box-sizing: border-box;
+}
+
+
 body{
-	background-color: #e7f3cd;
+	background-color: black;
 }
 .wrap{
 	width: 800px;
@@ -16,73 +20,92 @@ input{
 
 }
 
-
-.forms {
-	width: 200px;
-	margin-left: 150px;
-	padding-top: 100px;
+form {
+	padding-top: 110px;
+	padding-left: 80px;
+	width: 50%;
+	display: inline-block;
 }
+
+input[type=submit]{
+	box-shadow: 1px 31px 54px -17px rgba(0,0,0,0.75);
+}
+
 
 p{
 	text-align: center;
+	line-height: .1;
 }
 
 .plants{
-	padding: 65px 1px 0px;
+	padding: 3px;
 
 }
 
 .images{
 	margin-left: 110px; 
+	height: 200px;
+	display: flex;
 }
 
+.images img{
+	align-self: flex-end;
+}
+
+
+
 #hanging{
-	position: relative;
-	bottom: 444px;
-	left: 80px
+	position: absolute;
+	bottom: 392px;
+	left: 29%;
 }
 
 #ivy{
 	position: relative;
-	bottom: 262px;
-	left: 616px;
+	top: 85px;
+	left: 5px;
+	
+}
+
+.sec{
+	width: 50%;
+	display: inline-block;
+	float: right;
+	padding-top: 110px;
 }
 
 #displayImg{
-	position: absolute;
-	width: 265px;
+	width: 280px;
 	height: 125px;
-	right: -21%;
-	top: -42%;
-	left: 0px;
-	bottom: 0px;
-	margin: auto;
 	color: #5e4c5a;
-	text-align: center;
+	background-color: rgba(225,255,255, .7);
+	border-radius: 4px;
+	margin-left: 10px;
+	padding: 3px;
+
 }
 
 #logo{
 	position: absolute;
-	top: -17%;
+	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 150px;
 	margin: auto;
 	
 }
 
 img#help{
-	position: absolute;
-	left: 75%;
-	top: 5px;
+	position: fixed;
+	padding: 10px;
 }
 
 @keyframes highlight {
 	to{
-		-webkit-filter: drop-shadow(3px 3px 0 white)
-		drop-shadow(-3px 3px 0 white)
-		drop-shadow(3px -3px 0 white)
-      		drop-shadow(-3px -3px 0 white); 
+		-webkit-filter: drop-shadow(3px 3px 1px  white)
+		drop-shadow(-3px 3px 1px white)
+		drop-shadow(3px -3px 1px white)
+      		drop-shadow(-3px -3px 1px white); 
 
 	filter: drop-shadow(3px 3px 0 white) 
 		drop-shadow(-3px 3px 0 white)
@@ -91,6 +114,31 @@ img#help{
 	}
 }
 
+
+.range{
+	text-align: center;
+}
 .active{
 	animation: highlight 2s ease-in-out infinite alternate;
+}
+
+.help-menu{
+	display: none;
+}
+
+.help-menu-active{
+	z-index: 1;
+	width: 800px;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0, .5);
+	position: absolute;
+	top: 0;
+}
+
+.help-menu img{
+	width: 640px;
+	height: 480px;
 }

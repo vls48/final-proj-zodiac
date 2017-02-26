@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-	<title>What Pixel Plant Are You?</title>
+	<title>Pick Your Pixel Plant</title>
 
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
 	<link rel="stylesheet" href="master.css">
@@ -17,9 +17,7 @@
 	<div class="wrap">
 
 		<img src="images/help.png" alt="help" id="help">
-		<div id="displayImg">
-			
-		</div>
+		
 		
 		<form onsubmit="return calcPlant();">
 			<div class="forms"><p> 
@@ -30,11 +28,17 @@
 				<input id="bday" name="bday" type="date" required>
 			</p>
 			<p>
-				<input type="submit">
+				<input id="submit" type="submit">
 			</p>
 			</div>
 		</form>
-		
+
+		<div class="sec">
+			<div id="displayImg">
+			
+			</div>
+		</div>
+
 		<img src="images/logo-new.png" alt="logo" id="logo">
 		
 
@@ -48,14 +52,18 @@
 			<img src="images/plants/daffodil.png" alt="daffodil" class="plants" id="daffodil">
 			<img src="images/plants/venusflytrap.png" alt="venus fly trap" class="plants" id="trap">
 			<img src="images/plants/bleedingheart.png" alt="bleeding hearts" class="plants" id="bleeding">
-			<img src="images/plants/sunflower.png" alt="sunflower" class="plants" id="sun">	
+			<img src="images/plants/sunflower.png" alt="sunflower" class="plants" id="sun">
+			<img src="images/plants/hangingplant.png" alt="hanging plant" class="plants" id="hanging">
+			<img src="images/plants/ivy.png" alt="ivy" class="plants" id="ivy">		
 		</div>
 
-			<img src="images/plants/hangingplant.png" alt="hanging plant" class="plants" id="hanging">
 			
-			<img src="images/plants/ivy.png" alt="ivy" class="plants" id="ivy">	
-
+		<div class="help-menu" id="help-menu">
+			<img src="images/help-menu.png" alt="help menu image">
+		</div>
 	</div>
+
+	
 
 <script src="whatplantjava.js"></script>
 </body>
