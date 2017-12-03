@@ -3,11 +3,12 @@
 
 
 body{
-	background-color: black;
+	background-color: #3f6352;
 }
 .wrap{
 	width: 800px;
 	height: 600px;
+	position: relative;
 	background-image: url("images/window-fog.jpg");
 	margin: auto;
 }
@@ -43,6 +44,7 @@ p{
 }
 
 .images{
+	position: relative;
 	margin-left: 110px; 
 	height: 200px;
 	display: flex;
@@ -56,8 +58,8 @@ p{
 
 #hanging{
 	position: absolute;
-	bottom: 392px;
-	left: 29%;
+	bottom: 100px;
+	left: -30px;
 }
 
 #ivy{
@@ -87,12 +89,7 @@ p{
 
 #logo{
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 150px;
-	margin: auto;
-	
+	left: 275px;
 }
 
 img#help{
